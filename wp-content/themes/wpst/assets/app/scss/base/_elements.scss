@@ -47,7 +47,7 @@ address {
 a {
     text-decoration: none;
     color: $color-link;
-    border-bottom: 1px solid mix(white, $color-link, 50%);
+    // border-bottom: 1px solid mix(white, $color-link, 50%);
 
     &:hover,
     &:focus,

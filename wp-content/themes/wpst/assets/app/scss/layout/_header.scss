@@ -21,6 +21,37 @@
 .header {
     @extend %cf;
     position: relative;
+    padding-top: $base/2;
+
+    &:after {
+        @include respond-min($bp2) {
+            content: "";
+            width: 340px;
+            height: 300px;
+            position: absolute;
+            top: -175px;
+            right: 0px;
+            background: $cranberry;
+            border-radius: 50%;
+            z-index: -10;
+        }
+
+        @include respond-min($bp3) {
+            width: 380px;
+            height: 320px;
+            top: -175px;
+        }
+
+        @include respond-min($bp4) {
+            width: 420px;
+            height: 400px;
+            top: -250px;
+        }
+    }
+
+    @include respond-min($bp2) {
+        padding-top: 0;
+    }
 }
 
 
@@ -28,6 +59,15 @@
 \*----------------------------------------------------------------*/
 
 .header__logo {
+	height: 100px;
+	width: 100px;
+
+	@include respond-min($bp2) {
+		height: 120px;
+        width: 120px;
+        float: left;
+        margin-top: $base;
+	}
 }
 
 
@@ -35,7 +75,14 @@
 \*----------------------------------------------------------------*/
 
 .header__nav {
+    display: none;
+
+    @include respond-min($bp2) {
+        display:block;
+    }
+
     .is-active-nav & {
+        display: block;
     }
 }
 
@@ -45,7 +92,13 @@
 \*----------------------------------------------------------------*/
 
 .header__toggle {
-    @include respond-min($bp3) {
+    display: block;
+    float: right;
+    margin-top: $base;
+    padding: 0.75em 0em 0.5em 1em;
+
+    @include respond-min($bp2) {
+        display: none;
     }
 }
 

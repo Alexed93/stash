@@ -1,6 +1,12 @@
+.icon--logo-01 { background-image: url('png/logo-01.png'); background-repeat: no-repeat; }
+
 .icon--logo-mixd { background-image: url('png/logo-mixd.png'); background-repeat: no-repeat; }
 
 .icon--logo { background-image: url('png/logo.png'); background-repeat: no-repeat; }
+
+.icon--logo_1 { background-image: url('png/logo_1.png'); background-repeat: no-repeat; }
+
+.icon--logo_2 { background-image: url('png/logo_2.png'); background-repeat: no-repeat; }
 
 .icon--menu-close { background-image: url('png/menu-close.png'); background-repeat: no-repeat; }
 

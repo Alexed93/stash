@@ -25,6 +25,9 @@ $color-nav: $color-link;
 \*----------------------------------------------------------------*/
 
 .nav-container {
+	@include respond-min($bp2) {
+		padding-top: $base;
+	}
 }
 
 
@@ -35,12 +38,35 @@ $color-nav: $color-link;
 .nav {
     @extend %cf;
     @extend %list--unset;
+
+    @include respond-min($bp2) {
+    	float: right;
+    	clear: right;
+    }
 }
 
 .nav__item {
+	padding: $base/2 0;
+	margin-bottom: 0;
+	text-align: right;
+	text-transform: lowercase;
+	text-decoration: none;
+	border-bottom: 1px solid $grey-lighter;
+
+	@include respond-min($bp2) {
+		display: inline;
+		padding: 0;
+		margin-left: $base;
+		border: none;
+	}
 }
 
 .nav__link {
+	color: $color-text;
+
+	@include respond-min($bp2) {
+		color: $white;
+	}
 }
 
 
@@ -49,6 +75,8 @@ $color-nav: $color-link;
 \*----------------------------------------------------------------*/
 
 .nav--primary {
+	font-size: 1.35rem;
+	font-weight: 350;
 }
 
 
@@ -57,6 +85,12 @@ $color-nav: $color-link;
 \*----------------------------------------------------------------*/
 
 .nav--secondary {
+	font-size: 1.35rem;
+
+	@include respond-min($bp2) {
+		margin-bottom: $base/2;
+		font-size: 1rem;
+	}
 }
 
 
