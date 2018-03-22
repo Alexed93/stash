@@ -51,21 +51,23 @@ $yellow:              #1B49BE;
 /* secondary */
 $blue-light:          #28AAE1;
 
+/* Theme */
+$bright-grey:		  #474747;
+$havelock-blue:		  #1770BA;
+$mustard-brown:		  #FFB000;
+$purple-heart:		  #7a28CB;
+$cranberry:			  #FF006E;
+$malibu:			  #00A7E1;
+
 /**
  * UI colours
  */
 
 /* shades */
-$color-text: $grey-dark;
+$color-text: $bright-grey;
 $color-background: $white;
 $color-link: $blue-light;
 $color-link-hover: mix($blue-light, white, 50%);
-
-/* palette */
-$color-brand-blue:    $blue;
-$color-brand-red:     $red;
-$color-brand-green:   $green;
-$color-brand-yellow:  $yellow;
 
 /* states */
 $color-success:       #2ECC71;
@@ -76,7 +78,7 @@ $color-error:         #E74C3C;
 /* $. Typography
 \*----------------------------------------------------------------*/
 
-$font: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+$font: "Sofia Pro", sans-serif;
 
 $weight-normal:  300;
 $weight-medium:  500;

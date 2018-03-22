@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/css/print.css" media="print">
     <noscript><link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/grunticon/icons.fallback.css" rel="stylesheet"></noscript>
 
+    <!-- Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/xhu7uxu.css">
+
     <!--[if IE 9]><!-->
         <link rel="stylesheet" href="<?php echo wpst_file_cache_busting( get_stylesheet_directory_uri() . '/assets/dist/css/styles.css' ); ?>">
     <!--<![endif]-->
