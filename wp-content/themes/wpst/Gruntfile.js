@@ -29,7 +29,7 @@ module.exports = function( grunt ) {
      *
      * @type {string}
      */
-    var local_url = 'frontend-framework.dev';
+    var local_url = 'stash.local';
 
     grunt.initConfig({
         pkg: grunt.file.readJSON( 'package.json' ),
