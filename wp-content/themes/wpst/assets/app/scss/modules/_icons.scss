@@ -34,7 +34,23 @@
     max-width: 100%;
 }
 
+.social__icon {
+	margin-right: $base/2;
 
+	@include respond-min($bp2) {
+		float: right;
+		margin-left: $base;
+		margin-right: 0;
+	}
+}
+
+.animation--bounce {
+    transition: all .25s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
 
 /* $. Variations
 \*----------------------------------------------------------------*/

@@ -1,3 +1,11 @@
+.icon--facebook-01 { background-image: url('png/facebook-01.png'); background-repeat: no-repeat; }
+
+.icon--facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
+
+.icon--instagram-01 { background-image: url('png/instagram-01.png'); background-repeat: no-repeat; }
+
+.icon--instagram { background-image: url('png/instagram.png'); background-repeat: no-repeat; }
+
 .icon--logo-01 { background-image: url('png/logo-01.png'); background-repeat: no-repeat; }
 
 .icon--logo-mixd { background-image: url('png/logo-mixd.png'); background-repeat: no-repeat; }
@@ -13,4 +21,8 @@
 .icon--menu-open { background-image: url('png/menu-open.png'); background-repeat: no-repeat; }
 
 .icon--select { background-image: url('png/select.png'); background-repeat: no-repeat; }
+
+.icon--twitter-01 { background-image: url('png/twitter-01.png'); background-repeat: no-repeat; }
+
+.icon--twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
 

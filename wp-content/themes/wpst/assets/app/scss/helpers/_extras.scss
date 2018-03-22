@@ -24,7 +24,21 @@
     }
 }
 
+.copyright {
+    @include respond-min($bp2) {
+        float: left;
+    }
+}
 
+.created-by {
+    @include respond-min($bp2) {
+        float: right;
+    }
+}
+
+.copyright, .created-by {
+    margin-bottom: 0;
+}
 
 /* $. Flexible
 \*----------------------------------------------------------------*/
@@ -76,7 +90,11 @@
 
 .is-current,
 .is-current a {
-    color: $color-text;
+    color: $cranberry;
+
+    @include respond-min($bp2) {
+        color: $white;
+    }
 }
 
 

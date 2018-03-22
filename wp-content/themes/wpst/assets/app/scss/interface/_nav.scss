@@ -46,6 +46,7 @@ $color-nav: $color-link;
 }
 
 .nav__item {
+	position: relative;
 	padding: $base/2 0;
 	margin-bottom: 0;
 	text-align: right;
@@ -54,10 +55,29 @@ $color-nav: $color-link;
 	border-bottom: 1px solid $grey-lighter;
 
 	@include respond-min($bp2) {
-		display: inline;
+		display: inline-block;
 		padding: 0;
 		margin-left: $base;
 		border: none;
+	}
+}
+
+.nav__item:before {
+	@include respond-min($bp2) {
+		content: "";
+		width: 0;
+		height: 2px;
+		position: absolute;
+		bottom: 0px;
+		background: $white;
+		transition-duration: 0.3s;
+	}
+}
+
+.nav__item:hover:before, .is-current:before {
+	@include respond-min($bp2) {
+		width: 50%;
+	    background: $white;
 	}
 }
 
@@ -85,11 +105,10 @@ $color-nav: $color-link;
 \*----------------------------------------------------------------*/
 
 .nav--secondary {
-	font-size: 1.35rem;
+	font-size: 1rem;
 
 	@include respond-min($bp2) {
 		margin-bottom: $base/2;
-		font-size: 1rem;
 	}
 }
 

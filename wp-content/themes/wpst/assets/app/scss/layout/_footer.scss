@@ -16,16 +16,33 @@
 
 .footer {
     @extend %cf;
+    padding: $base 0;
+    background: $grey-lighter;
 }
 
 .footer__logo {
+	margin-right: $base/2;
+
+	@include respond-min($bp2) {
+        float: left;
+        margin-right: 0;
+	}
 }
 
+.footer {
+	.link {
+		color: $cranberry;
+
+		&:hover, &:focus {
+			color: darken($cranberry, 15%);
+		}
+	}
+}
 
 
 /* $. Copyright
 \*----------------------------------------------------------------*/
 
-.copyright {
-    @extend %cf;
-}
+// .copyright {
+//     @extend %cf;
+// }
