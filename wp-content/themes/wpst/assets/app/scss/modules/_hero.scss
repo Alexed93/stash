@@ -1,0 +1,42 @@
+.hero {
+
+}
+
+.hero__text {
+    text-align: left;
+
+    @include respond-min($bp2) {
+        text-align: center;
+    }
+}
+
+
+.hero__image {
+    img {
+        width: 55%;
+        height: auto;
+    }
+
+    @include respond-min($bp2) {
+        width: 40%;
+        float: right;
+        text-align: right;
+    }
+
+    @include respond-min($bp5) {
+        // width: 50%;
+    }
+}
+
+.hero__text--home {
+    h1 {
+        font-size: 4rem;
+        font-weight: $weight-normal;
+    }
+
+    @include respond-min($bp2) {
+        width: 60%;
+        float: left;
+        text-align: left;
+    }
+}

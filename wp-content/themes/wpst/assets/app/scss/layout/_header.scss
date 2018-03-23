@@ -45,16 +45,7 @@
         }
 
         @include respond-min($bp3) {
-            // width: 440px;
-            // height: 330px;
-            // top: -175px;
             right: -80px;
-        }
-
-        @include respond-min($bp4) {
-            // width: 470px;
-            // height: 330px;
-            // top: -250px;
         }
     }
 }
