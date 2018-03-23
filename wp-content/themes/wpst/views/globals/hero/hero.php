@@ -16,27 +16,29 @@ endif;
 ?>
 
 <div class="hero">
+    <div class="cf">
 
-    <div class="hero__text <?php echo $page_type; ?>">
-        <h1 class="hero__headline u-style-lowercase u-zero-bottom">
-            <?php echo $title; ?>
-        </h1>
+        <div class="hero__text <?php echo $page_type; ?>">
+            <h1 class="hero__headline u-style-lowercase u-zero-bottom">
+                <?php echo $title; ?>
+            </h1>
 
-        <p class="delta u-push-bottom/2">
-            <?php echo $excerpt; ?>
-        </p>
+            <p class="delta u-push-bottom/2">
+                <?php echo $excerpt; ?>
+            </p>
+
+            <?php if( is_front_page() ): ?>
+                <a href="/" class="btn btn--primary u-style-lowercase">
+                    See how it works
+                </a>
+            <?php endif; ?>
+        </div>
 
         <?php if( is_front_page() ): ?>
-            <a href="/" class="btn btn--primary u-style-lowercase">
-                See how it works
-            </a>
+            <div class="hero__image">
+                <img class="iphone iphone--home" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/iphone-light.svg" alt="" title="" />
+            </div>
         <?php endif; ?>
+
     </div>
-
-    <?php if( is_front_page() ): ?>
-        <div class="hero__image">
-            <img class="iphone iphone--home" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/iphone-light.svg" alt="" title="" />
-        </div>
-    <?php endif; ?>
-
 </div>
