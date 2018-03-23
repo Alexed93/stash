@@ -24,9 +24,11 @@ get_header();
 
         <?php get_template_part('views/globals/hero/hero'); ?>
 
-    <div class="features u-clear">
-        <?php get_template_part('views/front/features'); ?>
-    </div>
+        <div class="features u-clear">
+            <?php get_template_part('views/front/features'); ?>
+        </div>
+
+        <?php get_template_part('views/front/testimonials'); ?>
 
     </div><!-- .container -->
 </main><!-- .section -->

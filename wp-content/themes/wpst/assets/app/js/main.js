@@ -44,6 +44,20 @@
         toggleNav.toggleClass('icon--menu-open').toggleClass('icon--menu-close');
     });
 
+    /**
+     * Testimonial
+     */
+    $('.js-testimonial').slick({
+        dots: true,
+        infinite: true,
+        speed: 1200,
+        arrows: false,
+        autoplay: true,
+        fade: true,
+        swipeToSlide: true,
+        mobileFirst: true,
+    });
+
 })(jQuery);
 
 

@@ -15,7 +15,7 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( 'grunt-svgmin' );
     grunt.loadNpmTasks( 'grunt-grunticon' );
     grunt.loadNpmTasks( 'grunt-sass' );
-    grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks( 'grunt-browser-sync' );
 
     // Keep directories in variable for easy changes and CMS integration
     var dirs = {
@@ -100,6 +100,7 @@ module.exports = function( grunt ) {
                     ],
                     '<%= dirs.assets_output %>/js/head.min.js': [
                         '<%= dirs.modules %>/jquery/dist/jquery.js',
+                        '<%= dirs.modules %>/slick-carousel/slick/slick.js',
                         '<%= dirs.assets_input %>/js/vendors/modernizr.js',
                         '<%= dirs.assets_input %>/js/head.js'
                     ]

@@ -19,6 +19,7 @@
     "grunt-postcss": "~0.8.0",
     "grunt-sass": "~2.0.0",
     "grunt-svgmin": "~4.0.0",
-    "quiet-grunt": "~0.2.3"
+    "quiet-grunt": "~0.2.3",
+    "slick-carousel": "^1.8.1"
   }
 }
