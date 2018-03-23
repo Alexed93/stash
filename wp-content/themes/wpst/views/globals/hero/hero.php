@@ -15,7 +15,7 @@ endif;
 
 ?>
 
-<div class="hero cf">
+<div class="hero">
 
     <div class="hero__text <?php echo $page_type; ?>">
         <h1 class="hero__headline u-style-lowercase u-zero-bottom">

@@ -1,0 +1,58 @@
+.features {
+	@include respond-min($bp4) {
+		margin-top: $base*4;
+	}
+}
+
+.feature__text {
+	position: relative;
+	font-size: 1.15rem;
+
+	@include respond-min($bp2) {
+		padding-top: 75%;
+		padding-left: $base*2;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		width: 325px;
+		height: 100px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url('../img/arrow.svg');
+	}
+}
+
+.feature__odd {
+	&:after {
+		left: 20px;
+		bottom: 200px;
+		transform: rotate(-170deg);
+	}
+}
+
+.feature__image {
+	position: relative;
+
+	@include respond-min($bp2) {
+		text-align: center;
+	}
+}
+
+.feature__background {
+	position: absolute;
+	width: 110%;
+	height: 110%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.feature__background-1 {
+	background-image: url('../img/background-1.svg');
+}
