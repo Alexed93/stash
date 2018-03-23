@@ -17,7 +17,7 @@
 <a href="#navigation" class="is-hidden">Skip to Navigation</a>
 
 <header class="header">
-    <div class="container">
+    <div class="container header__container">
         <a href="/" class="logo icon icon--logo | header__logo">
             <span class="is-hidden"><?php bloginfo( 'name' ); ?></span>
         </a>

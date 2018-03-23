@@ -23,34 +23,39 @@
     position: relative;
     padding-top: $base/2;
 
+    @include respond-min($bp2) {
+        padding-top: 0;
+    }
+}
+
+.header__container {
+    position: relative;
+
     &:after {
         @include respond-min($bp2) {
             content: "";
-            width: 340px;
-            height: 300px;
+            width: 400px;
+            height: 310px;
             position: absolute;
             top: -175px;
-            right: 0px;
+            right: -90px;
             background: $cranberry;
             border-radius: 50%;
             z-index: -10;
         }
 
         @include respond-min($bp3) {
-            width: 380px;
-            height: 320px;
-            top: -175px;
+            // width: 440px;
+            // height: 330px;
+            // top: -175px;
+            right: -80px;
         }
 
         @include respond-min($bp4) {
-            width: 420px;
-            height: 400px;
-            top: -250px;
+            // width: 470px;
+            // height: 330px;
+            // top: -250px;
         }
-    }
-
-    @include respond-min($bp2) {
-        padding-top: 0;
     }
 }
 
