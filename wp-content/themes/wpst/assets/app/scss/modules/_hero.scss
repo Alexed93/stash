@@ -1,39 +1,85 @@
 .hero {
+    position: relative;
 
+    @include respond-min($bp2) {
+        margin-top: $base*2;
+
+
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &:before {
+            width: 450px;
+            height: 450px;
+            left: 45%;
+            top: 0px;
+            border-radius: 50%;
+            transform: translateX(-45%);
+            background-size: cover;
+            background-image: url('../img/dotted-circle.svg');
+            opacity: .2;
+        }
+
+        &:after {
+            width: 250px;
+            height: 150px;
+            left: 50%;
+            top: 225px;
+            transform: translateX(-50%);
+            background-size: contain;
+            background-image: url('../img/arrow.svg');
+        }
+    }
+
+    @include respond-min($bp3) {
+        &:after {
+            width: 300px;
+            height: 200px;
+            left: 60%;
+            transform: translateX(-60%);
+        }
+    }
 }
 
 .hero__text {
     text-align: left;
 
+    h1 {
+        font-size: 3rem;
+        font-weight: $weight-normal;
+    }
+
     @include respond-min($bp2) {
         text-align: center;
+
+        h1 {
+            font-size: 4rem;
+        }
     }
 }
 
 
 .hero__image {
+    margin-top: $base*2;
+
     img {
-        width: 55%;
+        width: 100%;
         height: auto;
     }
 
     @include respond-min($bp2) {
-        width: 40%;
+        width: 25%;
         float: right;
+        margin-top: 0;
         text-align: right;
-    }
-
-    @include respond-min($bp5) {
-        // width: 50%;
     }
 }
 
 .hero__text--home {
-    h1 {
-        font-size: 4rem;
-        font-weight: $weight-normal;
-    }
-
     @include respond-min($bp2) {
         width: 60%;
         float: left;
