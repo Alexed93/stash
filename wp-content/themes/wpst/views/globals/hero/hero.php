@@ -35,7 +35,7 @@ endif;
 
     <?php if( is_front_page() ): ?>
         <div class="hero__image">
-            <img class="iphone iphone--home" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/iphone-dark.svg" alt="" title="" />
+            <img class="iphone iphone--home" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/iphone-light.svg" alt="" title="" />
         </div>
     <?php endif; ?>
 

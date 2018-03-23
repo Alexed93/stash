@@ -57,6 +57,10 @@
 .header__logo {
 	height: 100px;
 	width: 100px;
+    transition: all .6s ease;
+    &:hover {
+        transform: rotate(-360deg);
+    }
 
 	@include respond-min($bp2) {
 		height: 120px;
