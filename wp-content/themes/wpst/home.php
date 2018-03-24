@@ -9,12 +9,17 @@
  *
  */
 
+// Get the header
+get_header();
+
 ?>
 
 <?php get_template_part('views/globals/breadcrumbs'); ?>
 
 <main class="section">
     <div class="container">
+
+        <?php get_template_part('views/globals/hero/hero'); ?>
 
         <div class="grid">
             <div class="grid__item grid__item--8-12-bp3">
@@ -37,3 +42,5 @@
 
     </div><!-- .container -->
 </main><!-- .section -->
+
+<?php get_footer(); ?>

@@ -7,7 +7,7 @@ $excerpt = wpst_get_excerpt_by_id( $page );
 
 if( is_front_page() ):
 
-    $page_type = "hero__text--home";
+    $page_type = "hero--home";
     $title = "Stash";
     $excerpt = "Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.";
 
@@ -15,17 +15,19 @@ endif;
 
 ?>
 
-<div class="hero">
+<div class="hero <?php echo $page_type; ?>">
     <div class="cf">
 
-        <div class="hero__text <?php echo $page_type; ?>">
+        <div class="hero__text">
             <h1 class="hero__headline u-style-lowercase u-zero-bottom">
                 <?php echo $title; ?>
             </h1>
 
-            <p class="delta u-push-bottom/2">
-                <?php echo $excerpt; ?>
-            </p>
+            <?php if($excerpt): ?>
+                <p class="hero__excerpt gamma u-push-bottom/2">
+                    <?php echo $excerpt; ?>
+                </p>
+            <?php endif; ?>
 
             <?php if( is_front_page() ): ?>
                 <a href="/" class="btn btn--primary u-style-lowercase">

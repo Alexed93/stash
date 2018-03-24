@@ -134,3 +134,38 @@
 		}
 	}
 }
+
+.cards--faq {
+	transition: all .25s ease;
+	.card {
+		&:hover {
+			transform: translateY(-10px);
+		}
+	}
+
+	&:before, &:after {
+		display: none;
+	}
+
+	@include respond-min($bp3) {
+		margin: $base*2 0;
+	}
+
+	.card--orange {
+		background: $mustard-brown;
+	}
+	.card--purple {
+		background: $purple-heart;
+	}
+	.card--red {
+		background: $cranberry;
+	}
+
+	.card__headline {
+		font-size: 1.35rem;
+	}
+
+	.card__excerpt {
+		opacity: 1;
+	}
+}
