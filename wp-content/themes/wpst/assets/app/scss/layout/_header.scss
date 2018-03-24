@@ -22,9 +22,14 @@
     @extend %cf;
     position: relative;
     padding-top: $base/2;
+    overflow-x: hidden;
 
     @include respond-min($bp2) {
         padding-top: 0;
+    }
+
+    @include respond-min($bp3) {
+        overflow-x: visible;
     }
 }
 
@@ -37,7 +42,7 @@
             width: 400px;
             height: 310px;
             position: absolute;
-            top: -165px;
+            top: -175px;
             right: -90px;
             background: $cranberry;
             border-radius: 50%;

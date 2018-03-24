@@ -28,9 +28,10 @@ get_header();
             <?php get_template_part('views/front/features'); ?>
         </div>
 
-        <?php get_template_part('views/front/testimonials'); ?>
-
     </div><!-- .container -->
+
+    <?php get_template_part('views/front/testimonials'); ?>
+
 </main><!-- .section -->
 
 <?php get_footer(); ?>

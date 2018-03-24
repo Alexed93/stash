@@ -1,0 +1,102 @@
+/**
+ * Title:
+ *    Testimonials
+ * Description:
+ *    Styling for the testimonials slider
+ */
+
+
+
+/* $. Stuff
+\*----------------------------------------------------------------*/
+
+.testimonials {
+	width: 100%;
+	padding: $base*1.5 0 $base*4 0;
+	margin-bottom: $base;
+	background: $malibu;
+	color: $white;
+	text-align: left;
+
+	@include respond-min($bp2) {
+		padding: $base*2 $base*2 $base*4.5 $base*2;
+		margin-bottom: $base*2;
+		text-align: center;
+	}
+}
+
+.testimonial {
+	margin-bottom: 0 !important;
+}
+
+.testimonial__image {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	margin-bottom: $base*2;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.testimonial__quote {
+	margin-bottom: 0;
+}
+
+.testimonial__author {
+}
+
+/* $. Slick
+\*----------------------------------------------------------------*/
+
+.slick-dots {
+    bottom: -45px;
+}
+
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    font-size: 0;
+    background: $white;
+}
+
+.slick-dots li.slick-active button {
+    background: darken($malibu, 15%);
+}
+
+.slick-next, .slick-prev {
+
+}
+
+.slick-next:before, .slick-prev:before {
+	display: none;
+	background: none;
+
+	@include respond-min($bp2) {
+		display: block;
+		content: "";
+        display: block;
+        height: 30px;
+        width: 30px;
+        opacity: 1;
+	}
+}
+
+.slick-next:before {
+	@include respond-min($bp2) {
+	    background: url('../img/slick-arrow-right.svg');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+.slick-prev:before {
+	@include respond-min($bp2) {
+		background: url('../img/slick-arrow-left.svg');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}

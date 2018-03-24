@@ -50,12 +50,14 @@
     $('.js-testimonial').slick({
         dots: true,
         infinite: true,
-        speed: 1200,
-        arrows: false,
+        speed: 2000,
+        arrows: true,
         autoplay: true,
         fade: true,
         swipeToSlide: true,
         mobileFirst: true,
+        prevArrow: '<div class="slick-prev"></div>',
+        nextArrow: '<div class="slick-next"></div>'
     });
 
 })(jQuery);

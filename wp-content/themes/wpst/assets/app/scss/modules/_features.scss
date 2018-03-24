@@ -1,3 +1,6 @@
+/* Features area wrap
+\*----------------------------------------------------------------*/
+
 .features {
     @include respond-min($bp4) {
         margin-top: $base*4;
@@ -5,14 +8,39 @@
 }
 
 .feature__wrap {
-    @include respond-min($bp2) {
-        margin-bottom: $base;
-    }
+    margin-bottom: $base*2;
+}
 
-    @include respond-min($bp3) {
-        margin-bottom: $base*2;
+/* Odd feature (the middle one)
+\*----------------------------------------------------------------*/
+
+.feature__odd {
+    @include respond-min($bp2) {
+        &:after {
+            left: 20px;
+            bottom: 225px;
+            transform: rotate(-170deg);
+            background-image: url('../img/arrow-right.svg');
+        }
     }
 }
+
+/* Even feature (the first and second)
+\*----------------------------------------------------------------*/
+
+.feature__even {
+    @include respond-min($bp2) {
+        &:after {
+            right: 20px;
+            bottom: 225px;
+            transform: rotate(170deg);
+            background-image: url('../img/arrow-left.svg');
+        }
+    }
+}
+
+/* Text side
+\*----------------------------------------------------------------*/
 
 .feature-text__container {
     width: 100%;
@@ -45,37 +73,27 @@
     }
 }
 
-.feature__odd {
-    @include respond-min($bp2) {
-        &:after {
-            left: 20px;
-            bottom: 225px;
-            transform: rotate(-170deg);
-            background-image: url('../img/arrow-right.svg');
-        }
-    }
-}
+/* Image side
+\*----------------------------------------------------------------*/
 
-.feature__even {
+.feature-image__wrap {
+    display: none;
     @include respond-min($bp2) {
-        &:after {
-            right: 20px;
-            bottom: 225px;
-            transform: rotate(170deg);
-            background-image: url('../img/arrow-left.svg');
-        }
+        display: inline-block;
     }
 }
 
 .feature__image {
-    position: relative;
-    width: 50%;
-
     @include respond-min($bp2) {
+        width: 50%;
+        position: relative;
         margin: 0 auto;
         margin-bottom: $base*3;
     }
 }
+
+/* Backgrounds of mobile phones
+\*----------------------------------------------------------------*/
 
 .feature__background {
     @include respond-min($bp2) {
