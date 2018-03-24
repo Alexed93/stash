@@ -2,6 +2,12 @@
 
 .icon--facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
 
+.icon--graph-01-01 { background-image: url('png/graph-01-01.png'); background-repeat: no-repeat; }
+
+.icon--graph-01 { background-image: url('png/graph-01.png'); background-repeat: no-repeat; }
+
+.icon--graph { background-image: url('png/graph.png'); background-repeat: no-repeat; }
+
 .icon--instagram-01 { background-image: url('png/instagram-01.png'); background-repeat: no-repeat; }
 
 .icon--instagram { background-image: url('png/instagram.png'); background-repeat: no-repeat; }
@@ -22,7 +28,19 @@
 
 .icon--menu-open { background-image: url('png/menu-open.png'); background-repeat: no-repeat; }
 
+.icon--respect-01 { background-image: url('png/respect-01.png'); background-repeat: no-repeat; }
+
+.icon--respect-2 { background-image: url('png/respect-2.png'); background-repeat: no-repeat; }
+
+.icon--respect { background-image: url('png/respect.png'); background-repeat: no-repeat; }
+
 .icon--select { background-image: url('png/select.png'); background-repeat: no-repeat; }
+
+.icon--transparency-01 { background-image: url('png/transparency-01.png'); background-repeat: no-repeat; }
+
+.icon--transparency-2 { background-image: url('png/transparency-2.png'); background-repeat: no-repeat; }
+
+.icon--transparency { background-image: url('png/transparency.png'); background-repeat: no-repeat; }
 
 .icon--twitter-01 { background-image: url('png/twitter-01.png'); background-repeat: no-repeat; }
 

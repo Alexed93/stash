@@ -2,6 +2,8 @@
 \*----------------------------------------------------------------*/
 
 .features {
+    margin-top: $base*2;
+
     @include respond-min($bp4) {
         margin-top: $base*4;
     }

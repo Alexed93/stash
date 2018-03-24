@@ -32,6 +32,10 @@ get_header();
 
     <?php get_template_part('views/front/testimonials'); ?>
 
+    <div class="container">
+        <?php get_template_part('views/front/cards'); ?>
+    </div>
+
 </main><!-- .section -->
 
 <?php get_footer(); ?>

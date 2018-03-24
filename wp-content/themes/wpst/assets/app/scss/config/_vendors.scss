@@ -89,11 +89,11 @@ $gr-item-align-y: top;                      // Initial vertical alignment of the
         .grid__item {
             display: flex;
 
-            > * {
-                display: flex;
-                padding-bottom: $base;
-                width: 100%;
-            }
+            // > * {
+            //     display: flex;
+            //     padding-bottom: $base;
+            //     width: 100%;
+            // }
         }
     }
 

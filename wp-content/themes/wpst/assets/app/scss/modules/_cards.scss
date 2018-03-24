@@ -1,0 +1,136 @@
+/* $. Setup
+\*----------------------------------------------------------------*/
+
+.cards {
+	@include respond-min($bp3) {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin: $base*4 0;
+		padding: $base*4 0;
+
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			width: 300px;
+			height: 100px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+
+		&:before {
+			top: -40px;
+			left: 15%;
+			background-image: url('../img/arrow-left.svg');
+			transform: rotate(180deg);
+		}
+
+		&:after {
+			bottom: -40px;
+			right: 15%;
+			background-image: url('../img/arrow-right.svg');
+		}
+	}
+}
+
+.card {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	padding: $base;
+	margin-bottom: $base;
+	border-radius: 5px;
+	color: $white;
+	transition: all .3s ease;
+
+	@include respond-min($bp2) {
+		min-height: 300px;
+		padding: $base*1.5 $base;
+		margin-bottom: 0;
+	}
+}
+
+.card:hover {
+	.card__excerpt {
+		opacity: 1;
+	}
+}
+
+.card__icon {
+	@include respond-min($bp2) {
+		content: "";
+		width: 90%;
+		height: 90%;
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		opacity: .2;
+	}
+}
+
+.card_icon--effective {
+	background-image: url('../../app/icons/graph-2.svg');
+}
+
+.card_icon--transparent {
+	background-image: url('../../app/icons/transparency-2.svg');
+}
+
+.card_icon--respect {
+	background-image: url('../../app/icons/respect-2.svg');
+}
+
+/* $. Animation
+\*----------------------------------------------------------------*/
+
+.card__excerpt {
+	opacity: 1;
+
+	@include respond-min($bp2) {
+		opacity: 0;
+	}
+}
+
+/* $. Modifications
+\*----------------------------------------------------------------*/
+
+.card--purple {
+	background: $purple-heart;
+
+	@include respond-min($bp2) {
+		background: lighten($purple-heart, 10%);
+
+		&:hover {
+			background: $purple-heart;
+		}
+	}
+}
+
+.card--red {
+	background: $cranberry;
+
+	@include respond-min($bp2) {
+		background: lighten($cranberry, 10%);
+
+		&:hover {
+			background: $cranberry;
+		}
+	}
+}
+
+.card--orange {
+	background: $mustard-brown;
+
+	@include respond-min($bp2) {
+		background: lighten($mustard-brown, 10%);
+
+		&:hover {
+			background: $mustard-brown;
+		}
+	}
+}
