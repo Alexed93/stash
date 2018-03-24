@@ -15,7 +15,7 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( 'grunt-svgmin' );
     grunt.loadNpmTasks( 'grunt-grunticon' );
     grunt.loadNpmTasks( 'grunt-sass' );
-    grunt.loadNpmTasks( 'grunt-browser-sync' );
+    grunt.loadNpmTasks('grunt-browser-sync');
 
     // Keep directories in variable for easy changes and CMS integration
     var dirs = {
