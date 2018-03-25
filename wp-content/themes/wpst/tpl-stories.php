@@ -26,6 +26,10 @@ get_header();
 
         <?php get_template_part('views/globals/hero/hero'); ?>
 
+        <div class="stories">
+            <?php get_template_part('views/stories/stories'); ?>
+        </div>
+
     </div>
     <!-- .container -->
 </main>

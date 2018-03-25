@@ -1,0 +1,40 @@
+.stories {
+	margin-top: $base;
+	@include respond-min($bp3) {
+		margin: 0;
+		padding: $base*2 0 $base*2 0;
+	}
+}
+
+.profile__image {
+	@include respond-min($bp2) {
+		width: 90px;
+		height: 90px;
+		position: absolute;
+		bottom: -3em;
+		left: -4em;
+		z-index: 20;
+		border-radius: 50%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	@include respond-min($bp3) {
+		width: 150px;
+		height: 150px;
+		left: -6em;
+	}
+}
+
+.profile__image--right {
+	@include respond-min($bp2) {
+		left: auto;
+		right: -4em;
+	}
+
+	@include respond-min($bp3) {
+		left: auto;
+		right: -6em;
+	}
+}

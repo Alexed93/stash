@@ -20,7 +20,7 @@
 
 	@include respond-min($bp2) {
 		padding: $base*2 $base*2 $base*4.5 $base*2;
-		margin-bottom: $base*2;
+		margin-bottom: $base*6;
 		text-align: center;
 	}
 }

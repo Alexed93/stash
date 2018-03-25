@@ -20,7 +20,7 @@
     @include respond-min($bp2) {
         &:after {
             left: 20px;
-            bottom: 225px;
+            top: -20px;
             transform: rotate(-170deg);
             background-image: url('../img/arrow-right.svg');
         }
@@ -34,7 +34,7 @@
     @include respond-min($bp2) {
         &:after {
             right: 20px;
-            bottom: 225px;
+            top: -20px;
             transform: rotate(170deg);
             background-image: url('../img/arrow-left.svg');
         }
@@ -58,9 +58,10 @@
     font-size: 1.15rem;
 
     @include respond-min($bp3) {
-        position: absolute;
-        bottom: 0;
+        position: relative;
+        top: 0;
         left: 0;
+        padding-top: $base*5;
         padding-left: $base*2;
 
         &:after {
@@ -126,5 +127,28 @@
 .feature__background--3 {
     @include respond-min($bp2) {
         background-image: url('../img/background-3.svg');
+    }
+}
+
+/* Stories
+\*----------------------------------------------------------------*/
+
+.stories {
+    .feature__wrap {
+        margin-bottom: $base*2;
+
+        @include respond-min($bp2) {
+            margin-bottom: $base*6;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .feature-text__container {
+        @include respond-min($bp3) {
+            min-height: 550px;
+        }
     }
 }
