@@ -109,7 +109,7 @@
 
     @include respond-min($bp2) {
         margin-top: $base*2;
-        margin-bottom: $base*8;
+        margin-bottom: $base*6;
 
         &:before {
             width: 450px;
