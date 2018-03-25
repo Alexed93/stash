@@ -1,3 +1,5 @@
+.icon--close { background-image: url('png/close.png'); background-repeat: no-repeat; }
+
 .icon--facebook-01 { background-image: url('png/facebook-01.png'); background-repeat: no-repeat; }
 
 .icon--facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
@@ -5,6 +7,8 @@
 .icon--graph-01-01 { background-image: url('png/graph-01-01.png'); background-repeat: no-repeat; }
 
 .icon--graph-01 { background-image: url('png/graph-01.png'); background-repeat: no-repeat; }
+
+.icon--graph-2 { background-image: url('png/graph-2.png'); background-repeat: no-repeat; }
 
 .icon--graph { background-image: url('png/graph.png'); background-repeat: no-repeat; }
 
@@ -27,6 +31,8 @@
 .icon--menu-close { background-image: url('png/menu-close.png'); background-repeat: no-repeat; }
 
 .icon--menu-open { background-image: url('png/menu-open.png'); background-repeat: no-repeat; }
+
+.icon--open { background-image: url('png/open.png'); background-repeat: no-repeat; }
 
 .icon--respect-01 { background-image: url('png/respect-01.png'); background-repeat: no-repeat; }
 

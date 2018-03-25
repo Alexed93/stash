@@ -52,32 +52,34 @@
         font-weight: $weight-normal;
     }
 
-    &:before, &:after {
-        content: "";
-        position: absolute;
-        width: 300px;
-        height: 100px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    &:before {
-        background-image: url('../img/arrow-left.svg');
-        top: -125px;
-        right: 150px;
-        transform: rotate(180deg);
-    }
-    &:after {
-        left: 150px;
-        bottom: -125px;
-        background-image: url('../img/arrow-left.svg');
-    }
-
     @include respond-min($bp2) {
         text-align: center;
 
         h1 {
             font-size: 4rem;
+        }
+    }
+
+    @include respond-min($bp3) {
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        &:before {
+            background-image: url('../img/arrow-left.svg');
+            top: -125px;
+            right: 150px;
+            transform: rotate(180deg);
+        }
+        &:after {
+            left: 150px;
+            bottom: -125px;
+            background-image: url('../img/arrow-left.svg');
         }
     }
 }

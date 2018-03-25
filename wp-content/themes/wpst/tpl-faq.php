@@ -26,6 +26,8 @@ get_header();
 
         <?php get_template_part('views/globals/hero/hero'); ?>
 
+        <?php get_template_part('views/faq/featured'); ?>
+
         <?php get_template_part('views/faq/faq'); ?>
 
     </div>

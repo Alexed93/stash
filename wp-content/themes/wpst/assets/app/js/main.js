@@ -60,6 +60,32 @@
         nextArrow: '<div class="slick-next"></div>'
     });
 
+    /**
+    * Accordion
+    */
+    var contentDiv = $('.accordion-section-content');
+
+    function close_accordion_section() {
+        $('.accordion-section').removeClass('active');
+        $(contentDiv).slideUp(300);
+        $('.accordion__icon').removeClass('icon--close').addClass('icon--open');
+    }
+
+    function open_accordion_section() {
+        $('.accordion-section').addClass('active');
+        $(contentDiv).slideDown(300);
+        $('.accordion__icon').removeClass('icon--open').addClass('icon--close');
+    }
+
+    $('.js-toggle-accordion').on('click', function(e){
+        if($('.accordion-section').is('.active')) {
+            close_accordion_section();
+        }
+        else {
+            open_accordion_section();
+        }
+    });
+
 })(jQuery);
 
 

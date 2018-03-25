@@ -1,0 +1,74 @@
+/*------------------------------------*\
+-------- DEMO Code: accordion
+\*------------------------------------*/
+/*----- Accordion -----*/
+.accordion, .accordion * {
+	box-sizing:border-box;
+}
+
+.accordion {
+	overflow:hidden;
+}
+
+.accordion-section {
+	position: relative;
+	width: 100%;
+	padding: $base*1.25;
+	display: inline-block;
+	margin-bottom: 1em;
+    border-radius: 30px;
+    background: $grey-lighter;
+    // transition: all 0.25s ease;
+}
+
+.accordion-section:hover {
+	background: $malibu;
+
+	.accordion-section-title, .accordion-section-content {
+		color: $white;
+	}
+}
+
+.accordion-section.active {
+	background: $malibu;
+	color: $white;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+	font-size: 1.35rem;
+
+	@include respond-min($bp2) {
+		padding-left: $base;
+	}
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+	display: none;
+
+	p {
+		margin-top: $base/2;
+		margin-bottom: 0;
+	}
+
+	@include respond-min($bp2) {
+		padding: 0 $base;
+	}
+
+	@include respond-min($bp4) {
+		max-width: 85%;
+	}
+}
+
+.accordion__icon {
+	display: none;
+
+	@include respond-min($bp2) {
+		display: block;
+		position: absolute;
+		top: $base*1.25;
+		right: $base*2;
+		background-size: contain;
+	}
+}

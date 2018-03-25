@@ -40,6 +40,23 @@
     margin-bottom: 0;
 }
 
+.sub-title {
+    margin-bottom: $base/2;
+
+    @include respond-min($bp3) {
+        margin-bottom: $base;
+    }
+}
+
+.faq {
+    @include respond-min($bp2) {
+        margin-top: $base;
+    }
+    @include respond-min($bp3) {
+        margin-top: 0;
+    }
+}
+
 /* $. Flexible
 \*----------------------------------------------------------------*/
 
