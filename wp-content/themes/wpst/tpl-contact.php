@@ -26,6 +26,18 @@ get_header();
 
         <?php get_template_part('views/globals/hero/hero'); ?>
 
+        <div class="contact">
+            <div class="grid grid--spaced">
+                <div class="grid__item grid__item--8-12-bp2">
+                    <?php the_content(); ?>
+                </div>
+
+                <div class="grid__item grid__item--4-12-bp2">
+                    <?php get_sidebar('contact'); ?>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- .container -->
 </main>

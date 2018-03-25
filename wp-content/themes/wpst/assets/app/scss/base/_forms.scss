@@ -113,3 +113,74 @@ fieldset:last-child {
     box-shadow: none;
     border: 1px solid $grey-light;
 }
+
+
+
+/* $. Theme form
+\*----------------------------------------------------------------*/
+.contact {
+    @include respond-min($bp2) {
+        padding-top: $base*4;
+    }
+}
+
+.gform_wrapper {
+    margin: 0 !important;
+}
+
+.form--contact {
+
+    .gfield {
+        margin: $base*2 0 !important;
+
+        &:nth-child(last) {
+            margin: 0 !important;
+        }
+    }
+
+    .gform_footer {
+        margin: 0 !important;
+    }
+
+    .gfield_required {
+        font-size: 1.5rem;
+    }
+
+    .gfield_label {
+        font-weight: $weight-normal !important;
+        font-size: 1.5rem !important;
+    }
+
+    .gfield_description {
+        font-size: 1.2rem !important;
+    }
+
+    .ginput_container input, .ginput_container textarea {
+        padding: $base !important;
+        border-radius: 10px !important;
+        background: $grey-lighter !important;
+        border: 0 !important;
+
+        &:focus, &:active {
+            background: $malibu !important;
+            color: $white;
+        }
+
+        @include respond-min($bp2) {
+            width: 85% !important;
+        }
+    }
+
+    .g_name {
+        margin-top: 0 !important;
+    }
+
+    .g_message {
+        margin-bottom: 0 !important;
+    }
+
+}
+
+
+
+
