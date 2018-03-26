@@ -2,7 +2,7 @@
 
 $page = get_the_id();
 $page_type = "";
-$title = get_the_title();
+$title = get_the_title($page);
 $excerpt = wpst_get_excerpt_by_id( $page );
 
 if( is_front_page() ):

@@ -64,24 +64,25 @@
     * Accordion - BROKE
     */
 
-    function close_accordion_section() {
-        $('.accordion-section').removeClass('active');
-        $('.accordion-section-content').slideUp(300);
-        $('.accordion__icon').removeClass('icon--close').addClass('icon--open');
+    function close_accordion_section(who) {
+        who.removeClass('active');
+        who.find('.accordion-section-content').slideUp(300);
+        who.find('.accordion__icon').addClass('icon--open').removeClass('icon--close');
     }
 
-    function open_accordion_section() {
-        $('.accordion-section').addClass('active');
-        $('.accordion-section-content').slideDown(300);
-        $('.accordion__icon').removeClass('icon--open').addClass('icon--close');
+    function open_accordion_section(who) {
+        who.addClass('active');
+        who.find('.accordion-section-content').slideDown(300);
+        who.find('.accordion__icon').removeClass('icon--open').addClass('icon--close');
     }
 
-    $('.js-toggle-accordion').on('click', function(e){
-        if($('.accordion-section').is('.active')) {
-            close_accordion_section();
+    $('.js-toggle-accordion').on('click', function() {
+        if($(this).is('.active')) {
+            close_accordion_section($(this));
         }
-        else {
-            open_accordion_section();
+        else if($(this).not('.active')) {
+            close_accordion_section($('.accordion-section'));
+            open_accordion_section($(this));
         }
     });
 

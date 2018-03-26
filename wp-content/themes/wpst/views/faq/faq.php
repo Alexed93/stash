@@ -9,7 +9,7 @@
  *
  */
 
-// Get featured project
+// Get questions and answers
 $questions = get_field('questions', 8);
 
 ?>
