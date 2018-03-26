@@ -1,27 +1,95 @@
 .pagination {
-    margin-top: $base*2;
-    padding: ($base/2) 0;
-    font-size: 1.2rem;
-    border-top: 1px solid $grey-lighter;
-    border-bottom: 1px solid $grey-lighter;
-
-    a, span {
-        display: inline-block;
+    span, .page, .pages {
+        display: none;
     }
 
     a {
+        display: inline-block;
         margin: 0 $base/4;
         line-height: 1;
-        border-bottom: 1px solid $color-link;
     }
 
     .pages {
-        margin-right: $base*2;
-        font-size: .85rem;
+        display: none;
     }
 
     .first,
     .last {
         border-bottom: 0;
     }
+
+    .wp-pagenavi a, .wp-pagenavi span {
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.wp-pagenavi {
+    width: 100%;
+    padding: $base;
+    background: $grey-lighter;
+    border-radius: 30px;
+    transition: all .25s ease;
+
+    @include respond-min($bp3) {
+        margin-bottom: $base*2;
+        border-radius: 5px;
+    }
+
+    &:hover {
+        background: $cranberry;
+
+        .nextpostslink, .previouspostslink {
+            color: $white;
+        }
+
+        .nextpostslink {
+            &:after {
+                background-image: url('../img/arrow-pag-right.svg');
+            }
+        }
+        .previouspostslink {
+            &:after {
+                background-image: url('../img/arrow-pag-left.svg');
+            }
+        }
+    }
+}
+
+.nextpostslink, .previouspostslink {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+
+    @include respond-min($bp3) {
+        font-size: 1.8rem;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 30px;
+            left: 0;
+            top: $base*1.5;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+
+    @include respond-min($bp4) {
+        bottom: -$base*1;
+    }
+}
+
+.nextpostslink:after {
+    background-image: url('../img/arrow-pag-right--cranberry.svg');
+}
+
+.previouspostslink:after {
+    background-image: url('../img/arrow-pag-left--cranberry.svg');
 }

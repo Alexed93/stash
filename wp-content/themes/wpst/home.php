@@ -21,23 +21,24 @@ get_header();
 
         <?php get_template_part('views/globals/hero/hero'); ?>
 
-        <div class="grid">
-            <div class="grid__item grid__item--8-12-bp3">
-                <?php
-                    if ( have_posts() ):
-                        while ( have_posts() ): the_post();
-                            get_template_part('views/post/loop');
-                        endwhile;
-                    else:
-                        get_template_part( 'views/errors/404-posts' );
-                    endif;
+        <div class="cards--blog">
+            <div class="grid grid--spaced grid--flex blog__grid">
+                <?php if ( have_posts() ): ?>
 
-                    get_template_part( 'views/globals/pagination' );
-                ?>
+                    <?php while ( have_posts() ): ?>
+
+                        <?php the_post(); ?>
+                        <?php get_template_part('views/post/index'); ?>
+
+                    <?php endwhile; ?>
+
+                <?php get_template_part('views/globals/pagination'); ?>
+
+                <?php else: ?>
+                        <?php get_template_part( 'views/errors/404-posts' ); ?>
+                <?php endif; ?>
             </div>
-            <div class="grid__item grid__item--4-12-bp3">
-                <?php //get_sidebar('news'); ?>
-            </div>
+            <?php //get_template_part( 'views/globals/pagination' ); ?>
         </div>
 
     </div><!-- .container -->

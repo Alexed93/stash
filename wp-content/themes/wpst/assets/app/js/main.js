@@ -64,16 +64,16 @@
     * Accordion - BROKE
     */
 
-    function close_accordion_section(who) {
-        who.removeClass('active');
-        who.find('.accordion-section-content').slideUp(300);
-        who.find('.accordion__icon').addClass('icon--open').removeClass('icon--close');
+    function close_accordion_section(bananas) {
+        bananas.removeClass('active');
+        bananas.find('.accordion-section-content').slideUp(300);
+        bananas.find('.accordion__icon').addClass('icon--open').removeClass('icon--close');
     }
 
-    function open_accordion_section(who) {
-        who.addClass('active');
-        who.find('.accordion-section-content').slideDown(300);
-        who.find('.accordion__icon').removeClass('icon--open').addClass('icon--close');
+    function open_accordion_section(bananas) {
+        bananas.addClass('active');
+        bananas.find('.accordion-section-content').slideDown(300);
+        bananas.find('.accordion__icon').removeClass('icon--open').addClass('icon--close');
     }
 
     $('.js-toggle-accordion').on('click', function() {
