@@ -24,6 +24,16 @@
 	}
 }
 
+.sidebar--share {
+	margin-top: $base*2;
+	margin-bottom: $base;
+
+	@include respond-min($bp2) {
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: $base*2;
+	}
+}
 
 
 /* $. Elements

@@ -24,6 +24,15 @@
     }
 }
 
+.nc_socialPanel.swp_flatFresh {
+    margin: 0 !important;
+    // margin: $base*2 0 $base 0 !important;
+
+    // @include respond-min($bp2) {
+    //     margin: $base*3 0 $base*2 0 !important;
+    // }
+}
+
 .copyright {
     @include respond-min($bp2) {
         float: left;
