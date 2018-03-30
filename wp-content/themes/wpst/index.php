@@ -23,11 +23,15 @@ get_header();
             <?php while ( have_posts() ): ?>
                 <?php the_post(); ?>
 
-                <article>
-                    <?php the_title(); ?>
+                <article class="content">
+                    <h1 class="u-style-lowercase u-zero-bottom">
+                        <?php the_title(); ?>
+                    </h1>
 
                     <?php if ( $post->post_excerpt ): ?>
-                        <?php echo get_the_excerpt(); ?>
+                        <p class="delta u-push-bottom/2">
+                            <?php echo get_the_excerpt(); ?>
+                        </p>
                     <?php endif; ?>
 
                     <?php the_content(); ?>
