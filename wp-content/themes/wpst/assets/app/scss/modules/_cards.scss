@@ -173,12 +173,12 @@
 }
 
 .cards--blog {
-	@include respond-min($bp3) {
-		margin: $base*15 0 0 0;
+	@include respond-min($bp2) {
+		margin: $base*4 0 0 0;
 	}
 
 	@include respond-min($bp3) {
-		margin: $base*17 0 0 0;
+		margin: $base*8 0 0 0;
 	}
 
 	.card {

@@ -1,0 +1,70 @@
+/**
+ * Title:
+ *    Categories
+ */
+
+
+
+/* $. Setup
+\*----------------------------------------------------------------*/
+.categories {
+	margin: $base 0 $base 0;
+
+	@include respond-min($bp2) {
+		margin: $base*9 0 0 0;
+		text-align: center;
+	}
+
+	@include respond-min($bp3) {
+		margin: $base*11 0 0 0;
+	}
+}
+
+.categories__content {
+	@include respond-min($bp2) {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.categories__list {
+}
+
+.category {
+	padding: $base/2 $base;
+	margin: 0 $base/6 $base/2 0 !important;
+	border-radius: 30px;
+
+	a {
+		color: $white;
+	}
+
+	@include respond-min($bp2) {
+		margin: 0 $base 0 0;
+	}
+
+	&:nth-child(1) {
+		background: $purple-heart;
+		&:hover {
+			background: darken($purple-heart, 15%);
+		}
+	}
+	&:nth-child(2) {
+		background: $cranberry;
+		&:hover {
+			background: darken($cranberry, 15%);
+		}
+	}
+	&:nth-child(3) {
+		background: $mustard-brown;
+		&:hover {
+			background: darken($mustard-brown, 15%);
+		}
+	}
+	&:nth-child(4) {
+		background: $havelock-blue;
+		&:hover {
+			background: darken($havelock-blue, 15%);
+		}
+	}
+}

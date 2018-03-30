@@ -33,7 +33,7 @@ get_header();
                             </h1>
 
                             <?php if ( $post->post_excerpt ): ?>
-                                <p class="delta u-push-bottom/2">
+                                <p class="delta u-push-bottom@2">
                                     <?php echo get_the_excerpt(); ?>
                                 </p>
                             <?php endif; ?>

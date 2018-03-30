@@ -14,12 +14,11 @@ get_header();
 
 ?>
 
-<?php get_template_part('views/globals/breadcrumbs'); ?>
-
 <main class="section">
     <div class="container">
 
         <?php get_template_part('views/globals/hero/hero'); ?>
+        <?php get_sidebar('blog'); ?>
 
         <div class="cards--blog">
             <div class="grid grid--spaced grid--flex blog__grid">
