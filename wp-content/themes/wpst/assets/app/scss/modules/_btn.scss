@@ -16,7 +16,7 @@
 
 %btn {
     display: inline-block;
-    padding: ($base/2) $base;
+    padding: $base/4 $base $base/2 $base;
     border: 0;
     border-radius: 30px;
     transition: all .15s ease-out;
