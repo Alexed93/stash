@@ -61,7 +61,7 @@
     });
 
     /**
-    * Accordion - BROKE
+    * Accordion
     */
 
     function close_accordion_section(bananas) {
@@ -85,6 +85,20 @@
             open_accordion_section($(this));
         }
     });
+
+    /**
+    * Jancky solution to hover effect on nav at tablet size
+    */
+
+    var mobileHover = function () {
+        $('*').on('touchstart', function () {
+            $(this).trigger('hover');
+        }).on('touchend', function () {
+            $(this).trigger('hover');
+        });
+    };
+
+    mobileHover();
 
 })(jQuery);
 
