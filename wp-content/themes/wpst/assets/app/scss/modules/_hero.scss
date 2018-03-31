@@ -40,6 +40,9 @@
 
 .hero__excerpt {
     @include respond-min($bp2) {
+        padding: 0 $base*4;
+    }
+    @include respond-min($bp3) {
         padding: 0 $base*6;
     }
 }
