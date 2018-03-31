@@ -10,7 +10,7 @@ if( is_front_page() ):
 
     $page_type = "hero--home";
     $title = "Stash";
-    $excerpt = "Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.";
+    $excerpt = wpst_get_excerpt_by_id( 4 );
 
 elseif( is_category() ):
 
