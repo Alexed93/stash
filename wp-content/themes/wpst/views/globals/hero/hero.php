@@ -45,7 +45,7 @@ endif;
 
             <?php if( is_front_page() ): ?>
                 <a href="/stories" class="btn btn--primary btn--medium u-style-lowercase u-push-top/2">
-                    See how it can help you
+                    See how people use stash
                 </a>
             <?php endif; ?>
         </div>

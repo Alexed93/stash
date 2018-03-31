@@ -22,6 +22,10 @@
             <span class="is-hidden"><?php bloginfo( 'name' ); ?></span>
         </a>
 
+        <a href="/" class="app-download icon icon--app-store">
+            <span class="is-hidden">Download the app for iOS</span>
+        </a>
+
         <a href="https://twitter.com/alexed93?lang=en" class="icon icon--xlarge icon--twitter | social__icon animation--bounce">
             <span class="is-hidden">Twitter</span>
         </a>

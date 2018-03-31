@@ -20,12 +20,12 @@
     background: $grey-lighter;
 }
 
-.footer__logo {
+.footer__logo, .app-download {
 	margin-right: $base/2;
 
 	@include respond-min($bp2) {
         float: left;
-        margin-right: 0;
+        margin-right: $base;
 	}
 }
 
