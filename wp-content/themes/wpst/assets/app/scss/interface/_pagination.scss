@@ -68,6 +68,7 @@
 
     @include respond-min($bp3) {
         font-size: 1.8rem;
+        text-align: left;
 
         &:after {
             content: "";
