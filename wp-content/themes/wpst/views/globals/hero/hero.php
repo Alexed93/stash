@@ -44,7 +44,7 @@ endif;
             <?php endif; ?>
 
             <?php if( is_front_page() ): ?>
-                <a href="/stories" class="btn btn--primary u-style-lowercase u-push-top/2">
+                <a href="/stories" class="btn btn--primary btn--medium u-style-lowercase u-push-top/2">
                     See how it can help you
                 </a>
             <?php endif; ?>
