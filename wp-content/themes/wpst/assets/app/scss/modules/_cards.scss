@@ -63,6 +63,7 @@
 }
 
 .card__icon {
+	transition: all .25s ease;
 	@include respond-min($bp2) {
 		content: "";
 		width: 90%;
@@ -74,6 +75,10 @@
 		background-size: contain;
 		background-position: center;
 		opacity: .1;
+
+		&:hover {
+			opacity: .1;
+		}
 	}
 
 	@include respond-min($bp3) {
