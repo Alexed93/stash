@@ -50,7 +50,7 @@
     $('.js-testimonial').slick({
         dots: true,
         infinite: true,
-        speed: 2000,
+        speed: 12000,
         arrows: true,
         autoplay: true,
         fade: true,
