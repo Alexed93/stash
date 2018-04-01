@@ -40,6 +40,11 @@
 
 	@include respond-min($bp2) {
 		padding-left: $base;
+		padding-right: $base*2;
+	}
+
+	@include respond-min($bp3) {
+		padding-right: 0;
 	}
 }
 
