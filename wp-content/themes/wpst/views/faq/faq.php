@@ -26,7 +26,7 @@ $questions = get_field('questions', 8);
                 $answer     = get_sub_field('answer');
             ?>
         <div class="accordion-section js-toggle-accordion">
-            <div class="accordion-section-title u-style-lowercase"><?php echo $question; ?></div>
+            <div class="accordion-section-title"><?php echo $question; ?></div>
             <span class="accordion__icon icon icon--open icon--medium"></span>
             <div class="accordion-section-content">
                 <p><?php echo $answer; ?></p>
