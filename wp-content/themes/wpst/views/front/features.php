@@ -24,7 +24,7 @@
         <div class="grid__item grid__item--6-12-bp2">
             <div class="feature-text__container">
                 <div class="feature__text feature__even">
-                    <h2 class="u-push-bottom/2">2. Tasks</h2>
+                    <h2 class="u-push-bottom/2">2. Progress</h2>
                     <p class="u-zero-bottom">Who said a task had to be boring? Complete monthly tasks to earn achievments and rise through the ranks. Be rewarded for consistently smashing your targets. Earn goodies such as vouchers, freebies and discounts at your favourite highstreet stores.</p>
                 </div>
             </div>
