@@ -50,14 +50,7 @@ module.exports = function( grunt ) {
             },
             options: {
                 watchTask: true,
-                proxy: '<%= local_url %>',
-                host: '<%= local_url %>',
-                open: 'external',
-                ghostMode: {
-                    clicks: true,
-                    forms: true,
-                    scroll: false
-                }
+                proxy: '<%= local_url %>'
             }
         },
 
