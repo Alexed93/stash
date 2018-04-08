@@ -12,7 +12,7 @@
             <div class="feature-text__container">
                 <div class="feature__text feature__odd">
                     <h2 class="u-push-bottom/2">1. Groups</h2>
-                    <p class="u-zero-bottom">Sharing a living space has it's own unique set of challenges, not least the difficulty of splitting the bills. Simply create a group, set a Lead Tennant and link to an existing PayPal account. Invite your housemates, set your recurring bills and avoid any arguments for the duration!</p>
+                    <p class="u-zero-bottom">Sharing a living space has it's own unique set of challenges, not least the difficulty of splitting the bills. Simply create a group and link to an existing PayPal account. Invite your housemates, set your recurring bills and avoid any arguments for the duration!</p>
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="feature-text__container">
                 <div class="feature__text feature__even">
                     <h2 class="u-push-bottom/2">2. Progress</h2>
-                    <p class="u-zero-bottom">Who said a task had to be boring? Complete monthly tasks to earn achievments and rise through the ranks. Be rewarded for consistently smashing your targets. Earn goodies such as vouchers, freebies and discounts at your favourite highstreet stores.</p>
+                    <p class="u-zero-bottom">Who said a task had to be boring? Complete monthly tasks to earn badges while thrashing your mates at the same time. Be rewarded for consistently smashing your targets. Earn goodies such as vouchers, freebies and discounts at your favourite highstreet stores.</p>
                 </div>
             </div>
         </div>
