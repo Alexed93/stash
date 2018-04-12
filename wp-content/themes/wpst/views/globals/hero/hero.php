@@ -52,9 +52,9 @@ endif;
 
         <?php if( is_front_page() ): ?>
             <div class="hero__image">
-                    <video class="iphone iphone--home" autoplay loop>
-                        <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/gifs/Home_hbk.mp4" type="video/mp4">
-                    </video>
+                <video class="iphone iphone--home" autoplay loop>
+                    <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/gifs/Home_hbk.mp4" type="video/mp4">
+                </video>
             </div>
         <?php endif; ?>
 
