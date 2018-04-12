@@ -3,7 +3,11 @@
     <div class="feature__wrap">
         <div class="grid__item grid__item--6-12-bp2 feature-image__wrap">
             <div class="feature__image">
-                <img class="iphone iphone--feature" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/iphone-light.svg" alt="How Bethan uses Stash" title="How Bethan uses Stash" />
+
+                <video class="iphone iphone--feature" autoplay loop>
+                    <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/gifs/Goals-NewGoal-Bethan_hbk.mp4" type="video/mp4">
+                </video>
+
                 <div class="u-push-bottom profile__image" style="background-image: url(' <?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/bethan.jpg ');"></div>
                 <span class="feature__background feature__background--1"></span>
             </div>

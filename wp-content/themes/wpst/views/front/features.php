@@ -43,7 +43,11 @@
     <div class="feature__wrap">
         <div class="grid__item grid__item--6-12-bp2 feature-image__wrap">
             <div class="feature__image">
-                <img class="iphone iphone--feature" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/iphone-light.svg" alt="" title="" />
+
+                <video class="iphone iphone--feature" autoplay loop>
+                    <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/gifs/Goals-AddMoney_hbk.mp4" type="video/mp4">
+                </video>
+
                 <span class="feature__background feature__background--3"></span>
             </div>
         </div>
