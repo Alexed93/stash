@@ -4,7 +4,7 @@
         <div class="grid__item grid__item--6-12-bp2 feature-image__wrap">
             <div class="feature__image">
 
-                <video class="iphone iphone--feature" autoplay loop>
+                <video class="iphone iphone--feature" controls="true" autoplay loop>
                     <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/gifs/Goals-NewGoal-Bethan_hbk.mp4" type="video/mp4">
                 </video>
 

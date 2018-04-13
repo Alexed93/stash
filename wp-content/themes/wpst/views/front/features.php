@@ -44,7 +44,7 @@
         <div class="grid__item grid__item--6-12-bp2 feature-image__wrap">
             <div class="feature__image">
 
-                <video class="iphone iphone--feature" autoplay loop>
+                <video class="iphone iphone--feature" autoplay loop controls="true">
                     <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/gifs/Goals-AddMoney_hbk.mp4" type="video/mp4">
                 </video>
 
