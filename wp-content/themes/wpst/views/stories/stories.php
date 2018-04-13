@@ -49,7 +49,7 @@
 
         <div class="grid__item grid__item--6-12-bp2 feature-image__wrap">
             <div class="feature__image">
-                <img class="iphone iphone--feature" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/iphone-light.svg" alt="How Alex uses Stash" title="How Alex uses Stash" />
+                <img class="iphone iphone--feature" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/progress-static.png" alt="How Alex uses stash" title="How Alex uses stash" />
                 <div class="u-push-bottom profile__image profile__image--right" style="background-image: url(' <?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/alex-2.jpg ');"></div>
                 <span class="feature__background feature__background--2"></span>
             </div>
@@ -61,7 +61,7 @@
     <div class="feature__wrap">
         <div class="grid__item grid__item--6-12-bp2 feature-image__wrap">
             <div class="feature__image">
-                <img class="iphone iphone--feature" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/iphone-light.svg" alt="How Ciara uses Stash" title="How Ciara uses Stash" />
+                <img class="iphone iphone--feature" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/groups-static.png" alt="How Ciara uses stash" title="How Ciara uses stash" />
                 <div class="u-push-bottom profile__image" style="background-image: url(' <?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/ciara.jpg ');"></div>
                 <span class="feature__background feature__background--3"></span>
                 <span class=""></span>

@@ -3,7 +3,7 @@
     <div class="feature__wrap">
         <div class="grid__item grid__item--6-12-bp2 feature-image__wrap">
             <div class="feature__image">
-                <img class="iphone iphone--feature" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/iphone-light.svg" alt="" title="" />
+                <img class="iphone iphone--feature" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/groups-static.png" alt="" title="" />
                 <span class="feature__background feature__background--1"></span>
             </div>
         </div>
@@ -32,7 +32,7 @@
 
         <div class="grid__item grid__item--6-12-bp2 feature-image__wrap">
             <div class="feature__image">
-                <img class="iphone iphone--feature" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/iphone-light.svg" alt="" title="" />
+                <img class="iphone iphone--feature" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/progress-static.png" alt="" title="" />
                 <span class="feature__background feature__background--2"></span>
             </div>
         </div>
